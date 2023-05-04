@@ -35,7 +35,7 @@ let nombreFormato = /(\w+)\s(\w+)/;
 let nombreInverso = nombre.replace(nombreFormato, "$2, $1");
 console.log("Nombre inverso:", nombreInverso);
 
-//Eliminar etiquetas <script> peligrosaso
+//Eliminar etiquetas <script> peligrosa
 let htmlPeligro = "<p>Puede que fuera un</p><script>alert('ataque');</script><p>maxivo</p>";
 let scriptRegex = /<script[\s\S]*?<\/script>/g;
 let htmlFiltro = htmlPeligro.replace(scriptRegex, "");
