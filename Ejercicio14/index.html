@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <!-- Vincula el archivo CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="calculadora">
+        <!-- Con readonly evitamos que se modifiquen manualmente los valores de la pantalla -->
+        <input type="text" id="pantalla" readonly>
+
+        <table>
+            <!-- Primera linea de botones de la tabla -->
+            <tr id="linea1">
+                <!-- Boton de retroceso con dos columnas de ancho -->
+                <td class="boton" colspan="2"><button>
+                        <</button> </td> <td class="boton"><button>CE</button></td>
+                <td class="boton" colspan="2"><button>C</button></td>
+            </tr>
+            <tr class="linea2">
+                <td><button>7</button></td>
+                <td><button>8</button></td>
+                <td><button>9</button></td>
+                <td><button>/</button></td>
+                <td><button>√</button></td>
+            </tr>
+            <tr>
+                <td><button>4</button></td>
+                <td><button>5</button></td>
+                <td><button>6</button></td>
+                <td><button>*</button></td>
+                <td><button>%</button></td>
+            </tr>
+            <tr>
+                <td><button>1</button></td>
+                <td><button>2</button></td>
+                <td><button>3</button></td>
+                <td><button>-</button></td>
+                <td><button>1/x</button></td>
+            </tr>
+            <tr>
+                <td><button>0</button></td>
+                <td><button>+/-</button></td>
+                <td><button>,</button></td>
+                <td><button>+</button></td>
+                <td><button>=</button></td>
+            </tr>
+        </table>
+
+    </div>
+    <!-- Vincula el archivo JS -->
+    <script src="./js/eventCalculadora.js"></script>
+</body>
+
+</html>
