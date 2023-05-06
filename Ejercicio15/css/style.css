@@ -1,0 +1,45 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    /* Lo usamos para que los elementos que esten dentro de 'container'
+    puedan ser manipulados facilmente */
+    display: flex;
+}
+
+.miniaturas {
+    width: 25%;
+    padding: 10px;
+    /* Lo usamos para el scroll de la miniaturas */
+    overflow-y: scroll; 
+}
+
+.miniaturas img {
+    border: 2px solid black;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.visor {
+    width: 75%;
+    display: flex;
+    /* Apilamos las miniaturas una debajo de la otra */
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.visor img {
+    max-width: 100%;
+    max-height: 80%;
+}
+
+.visor .pie-de-foto {
+    margin-top: 20px;
+    font-size: 18px;
+}
