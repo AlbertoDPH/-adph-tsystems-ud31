@@ -9,6 +9,8 @@ body {
     /* Lo usamos para que los elementos que esten dentro de 'container'
     puedan ser manipulados facilmente */
     display: flex;
+    /* Ajsutamos la altura al container que contiene las miniaturas */
+    height: 100vh;
 }
 
 .miniaturas {
@@ -16,6 +18,8 @@ body {
     padding: 10px;
     /* Lo usamos para el scroll de la miniaturas */
     overflow-y: scroll; 
+    /* Quitamos el scroll horizontal del las miniaturas */
+    overflow-x: hidden;
 }
 
 .miniaturas img {

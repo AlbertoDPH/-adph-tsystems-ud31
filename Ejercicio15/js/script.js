@@ -5,11 +5,11 @@ document.addEventListener("DOMContentLoaded", function () {
     let visor = document.querySelector(".visor");
 
     // Bucle for para crear las miniaturas de las 9 imagenes
-    for (let i = 1; i <= 9; i++) {
+    for (let i = 1; i <= 8; i++) {
         // Crea un nuevo elemento 'img' y asigna el 'src' y 'alt'
         let img = document.createElement("img");
-        img.src = `./images/imagen${i}.jpg`;
-        img.alt = `Imagen ${i}`;
+        img.src = `./images/foto${i}.jpg`;
+        img.alt = `Foto ${i}`;
 
         // Agrega un evento de 'click' al elemento 'img' que llama a la funcion 'mostrarImagen'
         img.addEventListener("click", () => {
@@ -24,8 +24,8 @@ document.addEventListener("DOMContentLoaded", function () {
     function mostrarImagen(index) {
         // Actualiza el contenido del visor con la imagen y el pie de foto correspondientes
         visor.innerHTML = `
-          <img src="./images/imagen${index}.jpg" alt="Imagen ${index}">
-          <p class="pie-de-foto">Imagen ${index}</p>
+          <img src="./images/foto${index}.jpg" alt="Foto ${index}">
+          <p class="pie-de-foto">Foto ${index}</p>
       `;
     }
 
